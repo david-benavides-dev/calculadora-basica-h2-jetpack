@@ -68,6 +68,8 @@ src/
 - **HikariCP** – Pool de conexiones
 
 - **Gradle** – Para el sistema de buildeo.
+  
+- **Shadow** – Para compilar el proyecto en un .jar.
 
 ## Cómo Funciona
 
