@@ -10,20 +10,19 @@
 
 Calculadora básica diseñada con soporte para persistencia de datos en una database H2 con HikariCP para el pool de conexiónes. Cuenta con dos modos de ejecución:
 - **Modo gráfico**: Con `Jetpack Compose`.
-- **Modo consola**: Utilizando la `terminal` (si se lanza con parámetros).
+- **Modo consola**: Utilizando la `terminal` (si se lanza con un parámetro).
 
 También cuenta con un registro de logs mediante archivos `.txt`. En el caso de que ocurra algún error en cálculo u otros, se realizarán guardados del mensaje
 en un archivo de texto junto a su fecha y hora correspondientes.
 
-Si bien el proyecto no sigue las directrices exactas de un proyecto con patrón de software DAO al uso (ya que utilicé un proyecto que realicé hace un mes) creo que la
-separación por capas está bien definida:
+El proyecto no sigue estrictamente el patrón DAO tradicional (ya que utilicé un proyecto que realicé hace un mes) la separación por capas está bien definida:
 - **Capa dao**: Encargada del acceso a datos y gestión de la db.
 - **Capa model**: Contiene las clases que representan el dominio del negocio y la lógica de la calculadora.
 - **Capa services**: Incluye la lógica de negocio y coordinación entre componentes.
 - **Capa ui**: Maneja la interacción con el usuario.
 - **Capa utils**: Proporciona funcionalidades auxiliares que no van en ninguna otra capa.
 
-Además, el proyecto aplica principios `DIP` y `SRP`, utilizando la inyección de interfaces en lugar de dependencias concretas, favoreciendo un diseño más modular y mantenible.
+Además, el proyecto aplica el **Principio de Inversión de Dependencias** (`DIP`) y el **Principio de Responsabilidad Única** (`SRP`), utilizando la inyección de interfaces en lugar de dependencias concretas, favoreciendo un diseño más modular y mantenible.
 
 ## Tabla de Contenidos
 [Estructura del proyecto](#estructura-del-proyecto)
