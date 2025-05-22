@@ -7,7 +7,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
-group = "org.calculadora-basica-h2"
+group = "org.calculadora-basica-h2-jetpack"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -33,7 +33,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "calculadora-basica-h2"
+            packageName = "calculadora-basica-h2-jetpack"
             packageVersion = "1.0.0"
         }
     }

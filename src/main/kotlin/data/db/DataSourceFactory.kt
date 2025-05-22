@@ -50,7 +50,7 @@ object DataSourceFactory {
      * @return una instancia tipo DataSource, representando la fuente de datos.
      */
     fun getDataSource(): DataSource {
-        return HikariDataSource(dataSrc)
+        return dataSrc
     }
 
     /**
