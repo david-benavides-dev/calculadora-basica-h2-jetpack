@@ -25,6 +25,9 @@ object DataSourceFactory {
         maximumPoolSize = 10
     }
 
+    /** FIX: DataSource configurado para la conexión a la base de datos, reutilizado para evitar la creación de múltiples pools de conexiones.*/
+    private val dataSrc = HikariDataSource(hikariConfig)
+
     // ***************************************
     // Tabla de cálculos para inicializar al inicio del programa.
     // ***************************************
@@ -47,7 +50,7 @@ object DataSourceFactory {
      * @return una instancia tipo DataSource, representando la fuente de datos.
      */
     fun getDataSource(): DataSource {
-        return HikariDataSource(hikariConfig)
+        return HikariDataSource(dataSrc)
     }
 
     /**
