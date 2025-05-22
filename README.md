@@ -15,7 +15,7 @@ Calculadora básica diseñada con soporte para persistencia de datos en una data
 También cuenta con un registro de logs mediante archivos `.txt`. En el caso de que ocurra algún error en cálculo u otros, se realizarán guardados del mensaje
 en un archivo de texto junto a su fecha y hora correspondientes.
 
-El proyecto no sigue estrictamente el patrón DAO tradicional (ya que utilicé un proyecto que realicé hace un mes) la separación por capas está bien definida:
+Aunque proyecto no sigue estrictamente el patrón DAO tradicional (ya que utilicé un proyecto que realicé hace un mes) la separación por capas está bien definida:
 - **Capa dao**: Encargada del acceso a datos y gestión de la db.
 - **Capa model**: Contiene las clases que representan el dominio del negocio y la lógica de la calculadora.
 - **Capa services**: Incluye la lógica de negocio y coordinación entre componentes.
