@@ -13,4 +13,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "calculadora-basica-h2"
+rootProject.name = "calculadora-basica-h2-jetpack"
